@@ -34,7 +34,7 @@ print()
 
 #Select the movie names for those movies that have a runtime of less than 2 hours
 cursor.execute("SELECT film_name, film_runtime FROM film WHERE film_runtime <= 120")
-filmRuntimes =  cursor.fetchall()
+filmRuntimes = cursor.fetchall()
 
 print("-- Displaying Short Film RECORDS --")
 for filmRuntime in filmRuntimes:
